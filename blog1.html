@@ -152,7 +152,44 @@ I understood that attributes should be text based for better results. So now, sh
 Finally I decided that for better results, I should consider text based remediation and other attributes could be keywords that indicate some sort of event that happened on the system.<br>
 For each keyword, some kind of software program or automation should be written to know what does the attribute refers to. Ofcourse some attributes could be common between activities that would show that some kind of relationship is there between attributes.<br>
 Most importantly based on these attributes model should be able to understand what kind of event is running on the mobile app and decide what kind of testing should be done on these.<br>
-
+<code>
+	{
+  "vulnerability": {
+    "name": "UnencryptedCommunication-CleartextTraffic",
+    "description": "Cleartext communication due to network_security_config misconfiguration or absence.",
+    "detectionMethods": [
+      {
+        "method": "NetworkTrafficAnalysis",
+        "description": "Analyze outgoing traffic for cleartext data patterns or insecure transmission."
+      },
+      {
+        "method": "CheckNetworkSecurityConfig",
+        "description": "Verify network_security_config presence, correctness, and encryption settings."
+      }
+    ],
+    "affectedComponent": ["NetworkModule", "ApplicationConfiguration"],
+    "severity": "Critical",
+    "mitigationSteps": [
+      {
+        "step": "EnableCleartextTrafficSetting",
+        "description": "Activate secure transmission protocols to encrypt data."
+      },
+      {
+        "step": "ImplementSecureProtocols",
+        "description": "Employ robust encryption protocols (e.g., TLS) for data transfer."
+      },
+      {
+        "step": "PeriodicReviewNetworkConfig",
+        "description": "Regularly review and update network configuration to maintain security."
+      }
+    ],
+    "documentation": {
+      "structured": false,
+      "text": "Detailed guide with practical steps for implementing secure transmission protocols."
+    }
+  }
+}
+</code>
 </p>	
 				</div>
 			</div>
