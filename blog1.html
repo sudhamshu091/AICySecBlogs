@@ -170,3 +170,164 @@ While considering the practicality, I think the following model might give bette
 		</div>
 
 </html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<body>	
+		<div id="sub_home" class="section">
+			<div class="container">
+				<div class="row">
+					<div>
+						<br>
+						<div class="portfolio-thumb">
+							<img src="images/aicysec.png" class="img-responsive" alt="portfolio img" width="400" height="100">
+							<div class="portfolio-overlay">
+							</div>
+						</div>
+						<h3>Initial Draft Roadmap & Which Attributes to select for training?</h3>
+						<a href="https://www.linkedin.com/in/sudhamshu-b-n-760bb7171/" class="fa fa-linkedin"></a>
+						<p>
+							<div class="portfolio-thumb">
+								<img src="images/blog1.jpg" class="img-responsive" alt="portfolio img" width="300" height="200">
+								<div class="portfolio-overlay">
+								</div>
+							</div>
+							◾️◾️◾️◾️◾️<br>
+							<p>
+								When connecting with experienced professionals in AI and CyberSecurity, prevalent terms surfaced:
+								<b>DRL + NLP, Dependency Analysis and Event Occurrence, Self-remediating, Intelligent Scheduling</b>.
+								My initial draft idea includes:
+								<b>
+									- AI Enabled Code Analysis and Mutation
+									- DRL + NLP Based Dynamic Analysis
+									- Adversarial Attack Strategies
+									- Graph Neural Network for Dependency Analysis/Event Occurred
+									- Self Healing and Auto Remediation
+									- Decentralized Privacy Techniques
+									- Predictive Security Analysis
+									- Intelligent Scheduling of vulnerabilities and load balancing/pipelining (while testing)
+								</b>
+							</p>
+							##future Ideas##
+							<p>
+								Quantum Safe Cryptography Integration
+							</p>
+							◾️◾️◾️◾️◾️<br>
+							<h2>Roadmap</h2>
+							<b>2-2.5 year plan</b><br>
+							<br>
+							4 months (January 2023 to April 2023)<br>
+							<b>
+								- Dataset collection and preparing a training dataset (collect data separately for Android and iOS)
+							</b><br>
+							<br>
+							84 weeks/strategy (Individually implement the ideas using AI)<br>
+							<b>
+								- Research existing code analysis strategies -- done, add views here
+								- Implement basic and advanced code analysis functionalities -- plan to use NLP Models (e.g., BERT, GPT), try pretrained models like Hugging Face's Transformers. Also use Rule Based Systems (that don't require Machine Learning) which can be easily integrated
+								- Develop Mutation Strategies based on analysis (reverse engineering)
+								- Integration of various tools during dynamic analysis
+								- Iteratively improve strategies based on testing outcomes
+							</b><br>
+							##future scope##
+							<p>
+								Tester feedback-based improvement
+							</p>
+							<b>
+								- Study Deep Reinforcement Learning (DRL) for Dynamic Analysis
+								- Design and implement a Prototype for dynamic analysis
+								- Test and refine DRL-based dynamic analysis model
+								- Continuously enhance these strategies based on test results and evolving threats
+							</b><br>
+							<p>
+								- Research adversarial attack methods
+								- Develop initial adversarial attack strategies
+								- Test strategies against code analysis and dynamic analysis
+								- Iteratively improve security models and frameworks
+							</p><br>
+							<p>
+								- Explore graph neural network (GNN) applications (dependency analysis)
+								- Implement GNN for dependency analysis
+								- Integrate GNN with existing analysis modules
+								- Iterative improvements
+							</p><br>
+							<p>
+								- Research self-healing techniques in code
+								- Develop initial auto-remediation strategies
+								- Test and refine auto-remediation features
+							</p><br>
+							<p>
+								- Investigate decentralized privacy methods
+								- Implement basic decentralized privacy measures
+								- Enhance and expand decentralized privacy functionalities
+							</p><br>
+							<p>
+								- Research predictive security models
+								- Develop and integrate predictive security analysis
+								- Validate and optimize predictive security algorithms
+							</p><br>
+							<p>
+								- Identify broader attack vectors in security
+								- Intelligent scheduling of vulnerabilities and load balancing/pipelining (while testing)
+								- Develop a framework for generalized attack vector analysis
+								- Test and expand the framework against various scenarios
+							</p><br>
+							##future works##
+							<p>
+								Threat intelligence integration, 0-day vulnerabilities
+							</p><br>
+						<p>
+								<h2>Challenge #1: Selecting Attributes for Training</h2>
+								To ensure an effective AI-based security testing model, selecting appropriate attributes is crucial. The tool should perform both static and dynamic analyses. Static analysis involves identifying specific malicious code, security vulnerabilities, or the presence of malware. Dynamic analysis poses more complex tasks, necessitating the detection of events, patterns, and behaviors within the app, network, kernel, and protocols to comprehensively uncover vulnerabilities.
+								<br><br>
+								My step-by-step process involved analyzing the technologies used in existing AI-based tools to detect vulnerabilities effectively. Initially considering NLP Models (e.g., BERT, GPT) and rule-based systems, I later adjusted the approach based on suggestions to focus on text-based attributes for better results. I intend to utilize text-based remediation attributes alongside keywords indicating system events. For each keyword, a software program or automation will be developed to identify the attribute's reference.
+								<br><br>
+								Practically, the following model might yield better results. It encompasses General Information, behavioral traits, detection methods, affected components, severity, mitigation steps, and documentation. These attributes would allow the model to comprehend the ongoing events in a mobile app, facilitating appropriate testing methodologies.
+								<br><br>
+								<code>
+								{
+									"vulnerability": {
+										"name": "UnencryptedCommunication-CleartextTraffic",
+										"description": "Cleartext communication due to network_security_config misconfiguration or absence.",
+										"detectionMethods": [
+											{
+												"method": "NetworkTrafficAnalysis",
+												"description": "Analyze outgoing traffic for cleartext data patterns or insecure transmission."
+											},
+											{
+												"method": "CheckNetworkSecurityConfig",
+												"description": "Verify network_security_config presence, correctness, and encryption settings."
+											}
+										],
+										"affectedComponent": ["NetworkModule", "ApplicationConfiguration"],
+										"severity": "Critical",
+										"mitigationSteps": [
+											{
+												"step": "EnableCleartextTrafficSetting",
+												"description": "Activate secure transmission protocols to encrypt data."
+											},
+											{
+												"step": "ImplementSecureProtocols",
+												"description": "Employ robust encryption protocols (e.g., TLS) for data transfer."
+											},
+											{
+												"step": "PeriodicReviewNetworkConfig",
+												"description": "Regularly review and update network configuration to maintain security."
+											}
+										],
+										"documentation": {
+											"structured": false,
+											"text": "Detailed guide with practical steps for implementing secure transmission protocols."
+										}
+									}
+								}
+								</code>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
