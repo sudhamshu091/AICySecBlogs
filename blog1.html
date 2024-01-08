@@ -13,9 +13,8 @@
 							</div>
 						</div>
 						<h3>Initial Draft Roadmap & Which Attributes to select for training?</h4>
-						<li><a href="https://www.linkedin.com/in/sudhamshu-b-n-760bb7171/" class="fa fa-linkedin"></a></li>
-						<p>
-						<div class="portfolio-thumb">
+						<a href="https://www.linkedin.com/in/sudhamshu-b-n-760bb7171/" class="fa fa-linkedin"></a>
+						<p><div class="portfolio-thumb">
 						<img src="images/blog1.jpg" class="img-responsive" alt="portfolio img" width="300" height="200">
 							<div class="portfolio-overlay">
 							</div>
@@ -36,7 +35,6 @@
 						g. Predictive Security Analysis<br>
 						h. Intelligent scheduling of vulnerabilities and load balancing/pipelining(while testing)<br>
 						i. Broader and Generalized Attack Vectors</b></p>
-						◾️◾️◾️◾️◾️<br>
 						##future Ideas##<br>
 						Quantum Safe Cryptography Integration<br>
 						<br>
@@ -102,9 +100,10 @@ Two things, AI tool should be able to do both static analysis and dynamic analys
 <br>
 I would use my step by step process. Analyzed what technologies do pesent AI based tools use to effectively find vulnerabilities. Plan to use NLP Models(eg BERT, GPT), try pretrained models like Hugging Face's Transformers. Also use of Rule Based Systems(that don't require Machine Learning) which can be easily intergrated.
 	<br>
-I was able to research and comeup with an idea, now my next challenge was "how to collect training data and which attributes should I consider?".
+I was able to research and comeup with an idea, now my next challenge was "how to collect training data and which attributes should I consider?". 
 	<br>
 My initial idea,<br>
+<code>
 General Information<br>
 {vulnerabilityName:""}<br>
 Behavioral Analysis<br>
@@ -117,6 +116,7 @@ Real-time Decision Making<br>
 {securityLevel:"", mitigationSteps:""}<br>
 #futurework#<br>
 {commonAttackVectors:["SQL Injection through input fields", "Authentication bypass using default credentials"]}<br>
+</code>
 <br>
 Later I changed initial idea and planned of considering numbers based on their privileges and ranks.<br>
 However some people suggested that it is not a good idea, instead switch back to text based attributes. <br>
@@ -124,6 +124,8 @@ I understood that attributes should be text based for better results. So now, sh
 Finally I decided that for better results, I should consider text based remediation and other attributes could be keywords that indicate some sort of event that happened on the system.<br>
 For each keyword, some kind of software program or automation should be written to know what does the attribute refers to. Ofcourse some attributes could be common between activities that would show that some kind of relationship is there between attributes.<br>
 Most importantly based on these attributes model should be able to understand what kind of event is running on the mobile app and decide what kind of testing should be done on these.<br>
+<br>
+While considering the practicality, I think the following model might give better results. It covers Identity/General Information, description(Which later would be processed with NLP. It covers behavioural traits, which contributes to the detectionMethods attribute.  Affected componets and severity that add up to the model and finally mitigationSteps and documentation would be really helpful.
 <code>
 	{
   "vulnerability": {
